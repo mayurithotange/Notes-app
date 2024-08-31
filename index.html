@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <style>
+          body{
+        background-color: beige;
+    }
+        .head{
+            display: block;
+            margin-top:100px ;
+            text-align: center;
+            
+        }
+        .to-do-div{
+            border:4px double black;
+            padding:5px;
+            margin:5px auto;
+            background-color:skyblue;
+            font-size: 25px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            height:32px;
+            flex-wrap: wrap;
+            
+
+        }
+
+        .btn{
+            background-color:red;
+            border: 2px solid red;
+            padding: 5px;
+            border-radius: 30px;
+            margin-top: 0.5px;
+            font-size: 15px;
+            color: aliceblue;
+            cursor: pointer;
+            box-shadow: 0px 0px 2px 0px #8C3061;
+            height: 29px;
+            
+        }
+
+        .btn-add{
+            border-radius: 30px;
+            border:1px solid black;
+            font-size: 7px;
+            background-color: pink;
+            color: pink;
+            margin: 20px;
+        }
+
+        .container{
+           display: flex;
+           justify-content: space-around;
+           margin:10px;
+           position: absolute;
+           top:5px;
+           left:550px;
+        }
+
+        .input{
+           width:350px;
+           height:30px;
+           border-radius: 20px;
+           padding: 5px;
+           font-size: 20px;
+           color: black;
+
+
+
+        }
+
+        .btn-add{
+               border-radius: 10px;
+               background-color: green;
+               font-size: 15px;
+               padding: 5px;
+               color:white;
+               height:30px;
+               width: 80px;
+               margin-top: 9px;
+               text-align: center;
+
+            }
+            .tasks-container{
+                height: 500px;
+                overflow-y: scroll;
+                
+
+            }
+    </style>
+</head>
+<body>
+    <h1 class="head"> TO DO LIST</h1>
+    <div id="tasks-container" class="tasks-container"></div>
+    <div class="container">
+
+    
+        <input  type="text" placeholder="Enter your task" id="input-task" class="input"/>
+        <button  onclick="addtotask()" class="btn-add"> Add Task </button>
+        
+    </div>
+    <script src="notes.js"></script>
+</body>
+   
+</body>
+</html>
